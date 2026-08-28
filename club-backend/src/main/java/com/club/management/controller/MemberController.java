@@ -57,6 +57,13 @@ public class MemberController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteMember(@PathVariable Long id) {
+        String currentEmail = SecurityContextHolder.getContext().getAuthentication().getName();
+        User currentUser = memberService.getMemberByEmail(currentEmail);
+
+        if (currentUser.getId().equals(id)) {
+            throw new RuntimeException("You cannot delete your own account");
+        }
+
         memberService.deleteMember(id);
         return ResponseEntity.noContent().build();
     }
