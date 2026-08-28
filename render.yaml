@@ -30,9 +30,3 @@ services:
     plan: free
     rootDir: club-frontend
     dockerfilePath: ./Dockerfile
-    envVars:
-      - key: BACKEND_URL
-        fromService:
-          name: club-backend
-          type: web
-          property: url   # internal service URL, e.g. https://club-backend.onrender.com
