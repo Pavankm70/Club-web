@@ -1,0 +1,38 @@
+services:
+  # ---- Backend (Spring Boot API) ----
+  - type: web
+    name: club-backend
+    runtime: docker
+    plan: free
+    rootDir: club-backend
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: DB_URL
+        sync: false            # set in Render dashboard (external MySQL)
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        sync: false            # or a generateValue for auto-generating
+      - key: CORS_ALLOWED_ORIGINS
+        sync: false            # e.g. https://club-frontend.onrender.com
+      - key: JPA_DDL_AUTO
+        value: update
+
+  # ---- Frontend (React + nginx) ----
+  - type: web
+    name: club-frontend
+    runtime: docker
+    plan: free
+    rootDir: club-frontend
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: BACKEND_URL
+        fromService:
+          name: club-backend
+          type: web
+          property: url   # internal service URL, e.g. https://club-backend.onrender.com
