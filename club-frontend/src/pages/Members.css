@@ -11,7 +11,7 @@
 
 .members-header h1 {
   font-size: 2.2rem;
-  color: #1a1a2e;
+  color: #000000;
   margin-bottom: 0.5rem;
 }
 
@@ -36,7 +36,7 @@
   width: 40px;
   height: 40px;
   border: 4px solid #e0e0e0;
-  border-top: 4px solid #e94560;
+  border-top: 4px solid #000000;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -50,7 +50,7 @@
 .members-error {
   text-align: center;
   padding: 3rem;
-  color: #e94560;
+  color: #000000;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
@@ -77,7 +77,7 @@
 }
 
 .members-table th {
-  background: #1a1a2e;
+  background: #000000;
   color: #fff;
   padding: 1rem;
   text-align: left;
@@ -113,8 +113,8 @@
 }
 
 .role-badge.admin {
-  background: rgba(233, 69, 96, 0.1);
-  color: #e94560;
+  background: rgba(0, 119, 182, 0.1);
+  color: #000000;
 }
 
 .role-badge.member {
@@ -149,7 +149,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #1a1a2e, #e94560);
+    background: linear-gradient(135deg, #000000, #000000);
     color: #fff;
     display: flex;
     align-items: center;
@@ -160,7 +160,7 @@
   }
 
   .member-card h3 {
-    color: #1a1a2e;
+    color: #000000;
     margin-bottom: 0.3rem;
   }
 

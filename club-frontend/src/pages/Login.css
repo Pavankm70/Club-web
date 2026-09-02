@@ -23,7 +23,7 @@
 
 .login-header h1 {
   font-size: 1.8rem;
-  color: #1a1a2e;
+  color: #000000;
   margin-bottom: 0.4rem;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .login-form input:focus {
-  border-color: #e94560;
+  border-color: #000000;
 }
 
 .login-error {
@@ -70,7 +70,7 @@
 .login-btn {
   width: 100%;
   padding: 0.85rem;
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  background: linear-gradient(135deg, #000000, #151515);
   color: #fff;
   border: none;
   border-radius: 8px;
