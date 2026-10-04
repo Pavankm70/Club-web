@@ -29,8 +29,8 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
       <div className="navbar-brand">
         <NavLink to="/" className="navbar-logo" onClick={closeMenu}>
-          <img src={clubIcon} alt="Datawitz logo" className="logo-icon" />
-          Datawitz
+          <img src={clubIcon} alt="Datawiz logo" className="logo-icon" />
+          Datawiz
         </NavLink>
       </div>
       <button
@@ -59,11 +59,18 @@ function Navbar() {
           </NavLink>
         </li>
         {!isAuthenticated() ? (
-          <li>
-            <NavLink to="/login" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={closeMenu}>
-              Login
-            </NavLink>
-          </li>
+          <>
+            <li>
+              <NavLink to="/login" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={closeMenu}>
+                Login
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/register" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={closeMenu}>
+                Register
+              </NavLink>
+            </li>
+          </>
         ) : (
           <>
             {user.role === 'ADMIN' && (

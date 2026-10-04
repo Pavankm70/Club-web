@@ -24,3 +24,10 @@ Thumbs.db
 # Env / Local
 *.env
 .env.local
+
+# Secrets / local credentials
+application-local.properties
+credentials.json
+service-account*.json
+*-service-account.json
+google-credentials*.json

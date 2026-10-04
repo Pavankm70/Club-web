@@ -7,13 +7,9 @@ import './Home.css'
 
 function Home() {
   const heroRef = useReveal()
-  const img1Ref = useReveal()
-  const txt1Ref = useReveal()
-  const img2Ref = useReveal()
-  const txt2Ref = useReveal()
-  const img3Ref = useReveal()
-  const txt3Ref = useReveal()
-  const featuresRef = useReveal()
+  const sec1Ref = useReveal()
+  const sec2Ref = useReveal()
+  const sec3Ref = useReveal()
   const ctaRef = useReveal()
 
   return (
@@ -26,7 +22,7 @@ function Home() {
         </div>
         <div className="hero-content reveal" ref={heroRef}>
           <span className="hero-badge">Welcome to</span>
-          <h1>Datawitz</h1>
+          <h1>Datawiz</h1>
           <p className="hero-tagline">Turning Data into Innovation</p>
           <p className="hero-description">
             Join our vibrant community of tech enthusiasts, data lovers, and
@@ -44,46 +40,45 @@ function Home() {
         </div>
       </section>
 
-      <section className="alt-section section-left">
-        <div className="alt-image reveal reveal-left" ref={img1Ref}>
+      <section className="alt-section section-left" ref={sec1Ref}>
+        <div className="alt-image reveal reveal-left">
           <div className="image-frame">
-            <img src={image1} alt="Datawitz community" />
+            <img src={image1} alt="Data Bits community" />
           </div>
         </div>
-        <div className="alt-text reveal" ref={txt1Ref}>
-          <span className="section-tag">Flagship Event</span>
-          <h2>Datawitz Code Hackathon</h2>
+        <div className="alt-text reveal">
+          <span className="section-tag">Who We Are</span>
+          <h2>A Community of Innovators</h2>
           <p>
-            Gear up for the biggest coding showdown of the year! Our flagship
-            Code Hackathon brings together the sharpest minds to build,
-            innovate, and compete for a grand prize pool of <strong>₹1,05,000</strong>.
-            Whether you thrive on problem solving, system design, or building
-            something entirely new, this is your stage to shine.
+            Data Bits is more than just a club - it's a family of passionate
+            individuals united by a shared love for technology and data science.
+            From our very first meeting, we've grown into a hub of creativity,
+            collaboration, and continuous learning.
           </p>
           <div className="alt-stats">
             <div className="stat">
-              <span className="stat-num">₹1.05L</span>
-              <span className="stat-label">Prize Pool</span>
-            </div>
-            <div className="stat">
-              <span className="stat-num">24hr</span>
-              <span className="stat-label">Intense Build</span>
-            </div>
-            <div className="stat">
               <span className="stat-num">50+</span>
-              <span className="stat-label">Teams Expected</span>
+              <span className="stat-label">Active Members</span>
+            </div>
+            <div className="stat">
+              <span className="stat-num">6+</span>
+              <span className="stat-label">Years Growing</span>
+            </div>
+            <div className="stat">
+              <span className="stat-num">∞</span>
+              <span className="stat-label">Ideas Shared</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="alt-section section-right section-tint">
-        <div className="alt-text reveal" ref={txt2Ref}>
+      <section className="alt-section section-right section-tint" ref={sec2Ref}>
+        <div className="alt-text reveal">
           <span className="section-tag">For Data Enthusiasts</span>
-          <h2>Visualize: Data Hackathon</h2>
+          <h2>Wizalyse: Data Hackathon</h2>
           <p>
-            Visualize is our hackathon crafted for everyone who loves turning
-            raw data into stories that matter. Dive into real-world datasets,
+            Wizalyse is our hackathon crafted for everyone who loves turning raw
+            data into stories that matter. Dive into real-world datasets,
             uncover hidden insights, and bring them to life with stunning,
             interactive visualizations. No matter your skill level, there's a
             category waiting for you.
@@ -94,103 +89,95 @@ function Home() {
             <li>Interactive dashboards &amp; charts</li>
             <li>Judged by industry mentors</li>
           </ul>
-          <Link to="/login" className="btn btn-primary">
+          <Link to="/register" className="btn btn-primary">
             Register Now
           </Link>
         </div>
-        <div className="alt-image reveal reveal-right" ref={img2Ref}>
+        <div className="alt-image reveal reveal-right">
           <div className="image-frame">
-            <img src={image2} alt="Datawitz events" />
+            <img src={image2} alt="data wizalyze hackathon" />
           </div>
         </div>
       </section>
 
-      <section className="alt-section section-left">
-        <div className="alt-image reveal reveal-left" ref={img3Ref}>
+      <section className="alt-section section-left" ref={sec3Ref}>
+        <div className="alt-image reveal reveal-left">
           <div className="image-frame">
-            <img src={image3} alt="Datawitz team" />
+            <img src={image3} alt="Data Bits team" />
           </div>
         </div>
-        <div className="alt-text reveal" ref={txt3Ref}>
-          <span className="section-tag">Join the Team</span>
-          <h2>Recruitments Open!</h2>
+        <div className="alt-text reveal">
+          <span className="section-tag">Join Our Team</span>
+          <h2>Recruitments Open — Sep 3, 2026</h2>
           <p>
-            Want to be part of what we build? Our <strong>club recruitments are
-            happening on 3rd September 2026</strong>. Whether you're into coding,
-            design, data, content, or event management, there's a role for you
-            in the Datawitz family. Bring your ideas, your energy, and your
-            enthusiasm.
+            Our exciting recruitment drive kicks off on <strong>3rd September
+            2026</strong>! This is your chance to become part of the Datawiz
+            family. We're looking for passionate, curious, and driven students
+            who want to grow through code, data, and creativity.
           </p>
-          <div className="alt-date">
-            <span className="date-day">03</span>
-            <span className="date-info">
-              <span className="date-month">September</span>
-              <span className="date-year">2026</span>
-            </span>
-          </div>
           <div className="alt-features">
             <div className="alt-feature">
-              <span className="feature-icon">&#128170;</span>
-              <span>All skill levels</span>
-            </div>
-            <div className="alt-feature">
-              <span className="feature-icon">&#128101;</span>
-              <span>Multiple roles</span>
+              <span className="feature-icon">&#128231;</span>
+              <span>Registration open</span>
             </div>
             <div className="alt-feature">
               <span className="feature-icon">&#128197;</span>
-              <span>3 Sept 2026</span>
+              <span>Sep 3, 2026</span>
+            </div>
+            <div className="alt-feature">
+              <span className="feature-icon">&#127891;</span>
+              <span>All years welcome</span>
             </div>
           </div>
-          <Link to="/login" className="btn btn-primary">
-            Apply Now
+          <Link to="/register" className="btn btn-primary">
+            Register Today
           </Link>
         </div>
       </section>
 
-      <section className="features" ref={featuresRef}>
-        <h2 className="section-title">Why Join Us?</h2>
-        <div className="features-grid">
-          <div className="feature-card">
-            <div className="feature-icon">&#128101;</div>
-            <h3>Community</h3>
-            <p>
-              Be part of a thriving community that supports and uplifts each
-              other. Share ideas, collaborate on projects, and grow together.
-            </p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">&#127908;</div>
-            <h3>Events</h3>
-            <p>
-              Participate in exciting events, workshops, and meetups. From tech
-              talks to social gatherings, there is always something happening.
-            </p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">&#128279;</div>
-            <h3>Networking</h3>
-            <p>
-              Connect with professionals and enthusiasts from diverse
-              backgrounds. Build your network and discover new opportunities.
-            </p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">&#128640;</div>
-            <h3>Growth</h3>
-            <p>
-              Accelerate your personal and professional development. Access
-              resources, mentorship, and hands-on learning experiences.
-            </p>
+      <section className="cta" ref={ctaRef}>
+        <div className="cta-features">
+          <h2 className="cta-title">Why Join Us?</h2>
+          <div className="cta-features-grid">
+            <div className="cta-feature">
+              <span className="cta-feature-icon">&#128101;</span>
+              <h3>Community</h3>
+              <p>
+                Be part of a thriving community that supports and uplifts each
+                other. Share ideas, collaborate on projects, and grow together.
+              </p>
+            </div>
+            <div className="cta-feature">
+              <span className="cta-feature-icon">&#127908;</span>
+              <h3>Events</h3>
+              <p>
+                Participate in exciting events, workshops, and meetups. From
+                tech talks to social gatherings, there is always something
+                happening.
+              </p>
+            </div>
+            <div className="cta-feature">
+              <span className="cta-feature-icon">&#128279;</span>
+              <h3>Networking</h3>
+              <p>
+                Connect with professionals and enthusiasts from diverse
+                backgrounds. Build your network and discover new opportunities.
+              </p>
+            </div>
+            <div className="cta-feature">
+              <span className="cta-feature-icon">&#128640;</span>
+              <h3>Growth</h3>
+              <p>
+                Accelerate your personal and professional development. Access
+                resources, mentorship, and hands-on learning experiences.
+              </p>
+            </div>
           </div>
         </div>
-      </section>
-
-      <section className="cta">
-        <div className="cta-content reveal" ref={ctaRef}>
+        <div className="cta-content reveal">
           <h2>Ready to Join the Community?</h2>
-          <p>Join Datawitz today and become part of something amazing.</p>
-          <Link to="/login" className="btn btn-primary btn-lg">
+          <p>Join Data Bits today and become part of something amazing.</p>
+          <Link to="/register" className="btn btn-primary btn-lg">
             Join Now
           </Link>
         </div>

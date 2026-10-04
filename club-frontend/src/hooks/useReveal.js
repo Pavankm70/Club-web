@@ -7,7 +7,15 @@ export default function useReveal(options = {}) {
     const el = ref.current
     if (!el) return
 
-    const reveal = () => el.classList.add('revealed')
+    const reveal = () => {
+      if (el.classList.contains('reveal')) {
+        el.classList.add('revealed')
+      }
+      const items = el.querySelectorAll('.reveal')
+      items.forEach((item, index) => {
+        setTimeout(() => item.classList.add('revealed'), index * 150)
+      })
+    }
 
     if (typeof IntersectionObserver === 'undefined') {
       reveal()
@@ -23,7 +31,7 @@ export default function useReveal(options = {}) {
           }
         })
       },
-      { threshold: 0.1, ...options }
+      { threshold: 0.15, ...options }
     )
 
     observer.observe(el)

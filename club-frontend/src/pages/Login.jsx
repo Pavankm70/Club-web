@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import './Login.css'
 
@@ -79,6 +79,10 @@ function Login() {
           <button type="submit" className="login-btn" disabled={loading}>
             {loading ? 'Signing in...' : 'Sign In'}
           </button>
+
+          <p className="login-switch">
+            New to the club? <Link to="/register">Apply for membership</Link>
+          </p>
         </form>
       </div>
     </div>

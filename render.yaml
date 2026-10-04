@@ -22,6 +22,12 @@ services:
         sync: false            # e.g. https://club-frontend.onrender.com
       - key: JPA_DDL_AUTO
         value: update
+      - key: GOOGLE_SPREADSHEET_ID
+        sync: false            # id from the Google Sheet URL
+      - key: GOOGLE_SHEET_RANGE
+        value: Sheet1!A1
+      - key: GOOGLE_SERVICE_ACCOUNT_JSON
+        sync: false            # full service-account JSON, newlines escaped as \n
 
   # ---- Frontend (React + nginx) ----
   - type: web

@@ -68,4 +68,8 @@ export function getMyDetails() {
   return api.get('/members/me')
 }
 
+export function submitRegistration(data) {
+  return api.post('/registrations', data)
+}
+
 export default api
