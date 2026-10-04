@@ -30,8 +30,8 @@ function About() {
           <span className="float-shape shape-2"></span>
         </div>
         <div className="about-hero-content">
-          <h1>About Datawiz</h1>
-          <p>Building a community that inspires, connects, and empowers.</p>
+          <h1>About GDG</h1>
+          <p>Google Developers Club - Building a community that inspires, connects, and empowers.</p>
         </div>
       </section>
 

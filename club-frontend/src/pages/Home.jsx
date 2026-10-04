@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import useReveal from '../hooks/useReveal'
-import image1 from '../images/WhatsApp Image 2026-09-02 at 4.49.14 PM.jpeg'
-import image2 from '../images/WhatsApp Image 2026-09-02 at 4.49.17 PM.jpeg'
-import image3 from '../images/WhatsApp Image 2026-09-02 at 4.49.20 PM.jpeg'
+import image1 from '../images/WhatsApp Image 2026-10-04 at 9.57.53 AM.jpeg'
+import image2 from '../images/WhatsApp Image 2026-10-04 at 9.57.54 AM.jpeg'
+import image3 from '../images/WhatsApp Image 2026-10-04 at 9.57.54 AM (1).jpeg'
 import './Home.css'
 
 function Home() {
@@ -22,12 +22,12 @@ function Home() {
         </div>
         <div className="hero-content reveal" ref={heroRef}>
           <span className="hero-badge">Welcome to</span>
-          <h1>Datawiz</h1>
-          <p className="hero-tagline">Turning Data into Innovation</p>
+          <h1>GDG</h1>
+          <p className="hero-tagline">Google Developers Club</p>
           <p className="hero-description">
-            Join our vibrant community of tech enthusiasts, data lovers, and
+            Join our vibrant community of tech enthusiasts, developers, and
             creative thinkers. Grow together, learn from each other, and build
-            meaningful connections through code and data.
+            meaningful connections through code and technology.
           </p>
           <div className="hero-actions">
             <Link to="/members" className="btn btn-primary">
@@ -43,26 +43,33 @@ function Home() {
       <section className="alt-section section-left" ref={sec1Ref}>
         <div className="alt-image reveal reveal-left">
           <div className="image-frame">
-            <img src={image1} alt="Data Bits community" />
+            <img src={image1} alt="Rajesh Hegde AI automation session" />
           </div>
         </div>
         <div className="alt-text reveal">
-          <span className="section-tag">Who We Are</span>
-          <h2>A Community of Innovators</h2>
+          <span className="section-tag">Guest Session</span>
+          <h2>Rajesh Hegde on AI Automation</h2>
           <p>
-            Data Bits is more than just a club - it's a family of passionate
-            individuals united by a shared love for technology and data science.
-            From our very first meeting, we've grown into a hub of creativity,
-            collaboration, and continuous learning.
+            We are thrilled to host <strong>Rajesh Hegde</strong> for an exclusive
+            session on <strong>AI Automation</strong>. Learn how intelligent
+            automation is reshaping the way we build software, ship products,
+            and solve real-world problems — straight from someone working at
+            the forefront of the technology.
           </p>
+          <ul className="alt-list">
+            <li>Building intelligent, self-running workflows</li>
+            <li>Practical tools for AI-powered automation</li>
+            <li>Real-world use cases and live demos</li>
+            <li>Open Q&amp;A with the speaker</li>
+          </ul>
           <div className="alt-stats">
             <div className="stat">
-              <span className="stat-num">50+</span>
-              <span className="stat-label">Active Members</span>
+              <span className="stat-num">AI</span>
+              <span className="stat-label">Automation</span>
             </div>
             <div className="stat">
-              <span className="stat-num">6+</span>
-              <span className="stat-label">Years Growing</span>
+              <span className="stat-num">1+</span>
+              <span className="stat-label">Guest Speaker</span>
             </div>
             <div className="stat">
               <span className="stat-num">∞</span>
@@ -74,28 +81,26 @@ function Home() {
 
       <section className="alt-section section-right section-tint" ref={sec2Ref}>
         <div className="alt-text reveal">
-          <span className="section-tag">For Data Enthusiasts</span>
-          <h2>Wizalyse: Data Hackathon</h2>
+          <span className="section-tag">Sponsored by Gemini, Google</span>
+          <h2>Code Sprint 4.0</h2>
           <p>
-            Wizalyse is our hackathon crafted for everyone who loves turning raw
-            data into stories that matter. Dive into real-world datasets,
-            uncover hidden insights, and bring them to life with stunning,
-            interactive visualizations. No matter your skill level, there's a
-            category waiting for you.
+            Code Sprint 4.0 is our flagship hackathon, proudly sponsored by
+            <strong> Gemini from Google</strong>. Teams of four come together to
+            build, break, and ship — turning bold ideas into working products in
+            a single high-intensity sprint. Whether you design, code, or pitch,
+            there's a track for you.
           </p>
           <ul className="alt-list">
-            <li>Real-world datasets &amp; challenges</li>
-            <li>Data analysis &amp; storytelling</li>
-            <li>Interactive dashboards &amp; charts</li>
-            <li>Judged by industry mentors</li>
+            <li>48-hour build sprint with mentor support</li>
+            <li>Gemini API &amp; Google Cloud integration tracks</li>
+            <li>Live demos and judging by industry mentors</li>
+            <li>Prizes, swag &amp; recognition from Google</li>
           </ul>
-          <Link to="/register" className="btn btn-primary">
-            Register Now
-          </Link>
+         
         </div>
         <div className="alt-image reveal reveal-right">
           <div className="image-frame">
-            <img src={image2} alt="data wizalyze hackathon" />
+            <img src={image2} alt="Code Sprint 4.0 hackathon" />
           </div>
         </div>
       </section>
@@ -103,17 +108,17 @@ function Home() {
       <section className="alt-section section-left" ref={sec3Ref}>
         <div className="alt-image reveal reveal-left">
           <div className="image-frame">
-            <img src={image3} alt="Data Bits team" />
+            <img src={image3} alt="GDG recruitment" />
           </div>
         </div>
         <div className="alt-text reveal">
           <span className="section-tag">Join Our Team</span>
-          <h2>Recruitments Open — Sep 3, 2026</h2>
+          <h2>Recruitments Open — 5th &amp; 6th October</h2>
           <p>
-            Our exciting recruitment drive kicks off on <strong>3rd September
-            2026</strong>! This is your chance to become part of the Datawiz
+            GDG (Google Developers Club) is recruiting on <strong>5th and 6th
+            October</strong>! This is your chance to become part of the GDG
             family. We're looking for passionate, curious, and driven students
-            who want to grow through code, data, and creativity.
+            who want to grow through code, technology, and creativity.
           </p>
           <div className="alt-features">
             <div className="alt-feature">
@@ -122,7 +127,7 @@ function Home() {
             </div>
             <div className="alt-feature">
               <span className="feature-icon">&#128197;</span>
-              <span>Sep 3, 2026</span>
+              <span>5th &amp; 6th Oct</span>
             </div>
             <div className="alt-feature">
               <span className="feature-icon">&#127891;</span>
@@ -176,7 +181,7 @@ function Home() {
         </div>
         <div className="cta-content reveal">
           <h2>Ready to Join the Community?</h2>
-          <p>Join Data Bits today and become part of something amazing.</p>
+          <p>Join GDG today and become part of something amazing.</p>
           <Link to="/register" className="btn btn-primary btn-lg">
             Join Now
           </Link>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
-import clubIcon from '../images/WhatsApp Image 2026-09-02 at 5.23.39 PM.jpeg'
+import clubIcon from '../images/gdg-logo.png'
 import './Navbar.css'
 
 function Navbar() {
@@ -29,8 +29,8 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
       <div className="navbar-brand">
         <NavLink to="/" className="navbar-logo" onClick={closeMenu}>
-          <img src={clubIcon} alt="Datawiz logo" className="logo-icon" />
-          Datawiz
+          <img src={clubIcon} alt="GDG logo" className="logo-icon" />
+          GDG
         </NavLink>
       </div>
       <button
